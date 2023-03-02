@@ -14,6 +14,10 @@
     inherit pkgs;
   };
 
+  services = import ./services {
+    inherit pkgs;
+  };
+
   xsession = import ./xsession {
     inherit pkgs;
   };
