@@ -9,4 +9,8 @@
 
     stateVersion = "22.11";
   };
+
+  programs = import ./programs {
+    inherit pkgs;
+  };
 }
