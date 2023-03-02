@@ -9,6 +9,10 @@
     inherit pkgs;
   };
 
+  firefox = import ./firefox.nix {
+    inherit pkgs;
+  };
+
   home-manager = import ./home-manager.nix {
     inherit pkgs;
   };
