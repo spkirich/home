@@ -13,4 +13,8 @@
   programs = import ./programs {
     inherit pkgs;
   };
+
+  xsession = import ./xsession {
+    inherit pkgs;
+  };
 }
