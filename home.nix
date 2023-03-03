@@ -7,6 +7,12 @@
     # Nothing fancy here...
     homeDirectory = /home/sery;
 
+    packages = with pkgs; [
+      brightnessctl
+      pamixer
+      pcmanfm
+    ];
+
     stateVersion = "22.11";
   };
 
