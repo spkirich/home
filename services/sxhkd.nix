@@ -4,10 +4,31 @@
   enable = true;
 
   keybindings = {
+    # Launch a terminal emulator.
     "super + Return" = "alacritty";
+
+    # Launch a web browser.
     "super + w" = "firefox";
-    "super + {_,shift + }c" = "bspc node -{c,k}";
-    "super + {_,shift + }{h,j,k,l}" = "bspc node -{f,s} {west,south,north,east}";
-    "super + {_,shift + }{1-8}" = "bspc {desktop,node} -{f,d} '^{1-8}'";
+
+    # Close the focused node.
+    "super + c" = "bspc node -c";
+
+    # Kill the focused node.
+    "super + shift + c" = "bspc node -k";
+
+    # Focus the node in the given direction.
+    "super + {h,j,k,l}" = "bspc node -f {west,south,north,east}";
+
+    # Swap the focused node with the node in the given direction.
+    "super + shift + {h,j,k,l}" = "bspc node -s {west,south,north,east}";
+
+    # Focus the given desktop.
+    "super + {1-8}" = "bspc desktop -f '^{1-8}'";
+
+    # Send the focused node to the given desktop.
+    "super + shift + {1-8}" = "bspc node -d '^{1-8}'";
+
+    # Control the monitor brightness.
+    "XF86MonBrightness{Up,Down}" = "brightnessctl set {+10%,10%-}";
   };
 }

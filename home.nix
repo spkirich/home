@@ -7,6 +7,10 @@
     # Nothing fancy here...
     homeDirectory = /home/sery;
 
+    packages = with pkgs; [
+      brightnessctl
+    ];
+
     stateVersion = "22.11";
   };
 
