@@ -4,6 +4,12 @@
   enable = true;
 
   keybindings = {
+    # Power-off the machine.
+    "super + alt + p" = "poweroff";
+
+    # Reboot the machine.
+    "super + alt + r" = "reboot";
+
     # Launch a terminal emulator.
     "super + Return" = "alacritty";
 
