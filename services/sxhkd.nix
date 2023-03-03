@@ -28,6 +28,9 @@
     # Send the focused node to the given desktop.
     "super + shift + {1-8}" = "bspc node -d '^{1-8}'";
 
+    # Control the audio volume.
+    "XF86Audio{LowerVolume,Mute,RaiseVolume}" = "pamixer {-d 10,-t,-i 10}";
+
     # Control the monitor brightness.
     "XF86MonBrightness{Up,Down}" = "brightnessctl set {+10%,10%-}";
   };

@@ -9,6 +9,7 @@
 
     packages = with pkgs; [
       brightnessctl
+      pamixer
     ];
 
     stateVersion = "22.11";
