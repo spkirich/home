@@ -13,6 +13,9 @@
     # Launch a terminal emulator.
     "super + Return" = "alacritty";
 
+    # Launch a heavy file manager.
+    "super + shift + n" = "pcmanfm";
+
     # Launch a web browser.
     "super + w" = "firefox";
 

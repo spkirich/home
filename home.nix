@@ -10,6 +10,7 @@
     packages = with pkgs; [
       brightnessctl
       pamixer
+      pcmanfm
     ];
 
     stateVersion = "22.11";
