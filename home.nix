@@ -27,4 +27,8 @@
   xsession = import ./xsession {
     inherit pkgs;
   };
+
+  gtk = import ./gtk {
+    inherit pkgs;
+  };
 }
