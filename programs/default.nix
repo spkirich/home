@@ -20,4 +20,8 @@
   rofi = import ./rofi.nix {
     inherit pkgs;
   };
+
+  zathura = import ./zathura.nix {
+    inherit pkgs;
+  };
 }
