@@ -9,11 +9,16 @@
 
     packages = with pkgs; [
       brightnessctl
+      firefox
       pamixer
       pcmanfm
     ];
 
     stateVersion = "22.11";
+  };
+
+  gtk = import ./gtk {
+    inherit pkgs;
   };
 
   programs = import ./programs {
@@ -25,10 +30,6 @@
   };
 
   xsession = import ./xsession {
-    inherit pkgs;
-  };
-
-  gtk = import ./gtk {
     inherit pkgs;
   };
 }
