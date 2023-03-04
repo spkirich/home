@@ -5,6 +5,14 @@
     inherit pkgs;
   };
 
+  bash = import ./bash.nix {
+    inherit pkgs;
+  };
+
+  direnv = import ./direnv.nix {
+    inherit pkgs;
+  };
+
   git = import ./git.nix {
     inherit pkgs;
   };
