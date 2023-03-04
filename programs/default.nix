@@ -16,4 +16,8 @@
   home-manager = import ./home-manager.nix {
     inherit pkgs;
   };
+
+  rofi = import ./rofi.nix {
+    inherit pkgs;
+  };
 }

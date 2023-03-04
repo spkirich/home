@@ -13,6 +13,9 @@
     # Launch a web browser.
     "super + w" = "firefox";
 
+    # Launch an application menu.
+    "super + d" = "rofi -show drun";
+
     # Make the focused node tiled.
     "super + ctrl + t" = "bspc node -t tiled";
 
