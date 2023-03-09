@@ -33,7 +33,7 @@ in
       inherit background;
       inherit foreground;
 
-      font-0 = "Iosevka:size=12;2";
+      font-0 = "Iosevka Nerd Font:size=12;2";
       locale = "ru_RU.UTF-8";
 
       modules-left = "bspwm xwindow";
@@ -79,13 +79,13 @@ in
       type = "internal/network";
       interface = "wlp3s0";
 
-      format-connected = "%{F${green}}%{F-} <label-connected>";
+      format-connected = "%{F${green}} %{F-} <label-connected>";
       format-connected-underline = green;
       format-connected-padding = 1;
 
       label-connected = "%essid%";
 
-      format-disconnected = "%{F${yellow}}%{F-} <label-disconnected>";
+      format-disconnected = "%{F${yellow}} %{F-} <label-disconnected>";
       format-disconnected-underline = yellow;
       format-disconnected-padding = 1;
 
@@ -95,13 +95,13 @@ in
     "module/pulseaudio" = {
       type = "internal/pulseaudio";
 
-      format-muted = "%{F${yellow}}%{F-} <label-muted>";
+      format-muted = "%{F${yellow}} %{F-} <label-muted>";
       format-muted-underline = yellow;
       format-muted-padding = 1;
 
       label-muted = "mute";
 
-      format-volume = "%{F${green}}%{F-} <label-volume>";
+      format-volume = "%{F${green}} %{F-} <label-volume>";
       format-volume-underline = green;
       format-volume-padding = 1;
 
@@ -116,25 +116,25 @@ in
 
       low-at = 20;
 
-      format-charging = "%{F${green}}%{F-} <label-charging>";
+      format-charging = "%{F${green}} %{F-} <label-charging>";
       format-charging-underline = green;
       format-charging-padding = 1;
 
       label-charging = "%percentage:3%%";
 
-      format-discharging = "%{F${yellow}}%{F-} <label-discharging>";
+      format-discharging = "%{F${yellow}} %{F-} <label-discharging>";
       format-discharging-underline = yellow;
       format-discharging-padding = 1;
 
       label-discharging = "%percentage:3%%";
 
-      format-full = "%{F${green}}%{F-} <label-full>";
+      format-full = "%{F${green}} %{F-} <label-full>";
       format-full-underline = green;
       format-full-padding = 1;
 
       label-full = "%percentage:3%%";
 
-      format-low = "%{F${red}}%{F-} <label-low>";
+      format-low = "%{F${red}} %{F-} <label-low>";
       format-low-underline = red;
       format-low-padding = 1;
 
@@ -144,7 +144,7 @@ in
     "module/xkeyboard" = {
       type = "internal/xkeyboard";
 
-      format = "%{F${yellow}}%{F-} <label-layout>";
+      format = "%{F${yellow}} %{F-} <label-layout>";
       format-underline = yellow;
       format-padding = 1;
 

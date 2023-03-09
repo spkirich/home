@@ -37,6 +37,14 @@
       };
     };
 
+    font = {
+      normal = {
+        family = "Iosevka Nerd Font";
+      };
+
+      size = 12;
+    };
+
     window = {
       opacity = 0.75;
 
