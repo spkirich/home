@@ -8,4 +8,8 @@
   picom = import ./picom.nix {
     inherit pkgs;
   };
+
+  polybar = import ./polybar.nix {
+    inherit pkgs;
+  };
 }
